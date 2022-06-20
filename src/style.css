@@ -1,0 +1,72 @@
+:root {
+    --background-white: #f1f1f1;
+    --background-box-white: #f0f0f0;
+    --background-box-gray: #d9d9d9;
+    --background-box-yellow: #c3ba00;
+    --background-box-green: #3cce77;
+    --background-key-used-gray: #a59f9f;
+    --background-key-default: #dfdfdf;
+    --background-key-default-hover: #cccccc;
+
+    --color-text-black: #524747;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 20px
+}
+
+#alert {
+    margin: 5px;
+    font-size: 1.8rem;
+    color: var(--background-box-green);
+    text-align: center;
+}
+
+.keyboard__list {
+    display: flex;
+    justify-content: center;
+}
+
+.keyboard__button {
+    width: min-content;
+    min-width: 18px;
+    max-width: 60px;
+    padding: 5px 8px;
+    margin: 2px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--color-text-black);
+    background-color: var(--background-key-default);
+    border: none;
+    border-radius: 5px;
+}
+
+.keyboard__button:hover {
+    background-color: var(--background-key-default-hover);
+}
