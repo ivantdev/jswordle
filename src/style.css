@@ -1,15 +1,14 @@
 :root {
-    --background-white: #f1f1f1;
+    --background-white: #f1f1f18f;
     --background-box-white: #f0f0f0;
     --background-box-gray: #d9d9d9;
-    --background-box-yellow: #c3ba00;
+    --background-box-yellow: #ebe01a;
     --background-box-green: #3cce77;
     --background-key-used-gray: #a59f9f;
     --background-key-default: #dfdfdf;
     --background-key-default-hover: #cccccc;
 
     --color-text-black: #524747;
-    
 }
 
 * {
@@ -24,6 +23,7 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
+    min-width: 320px;
 }
 
 ul {
@@ -45,6 +45,10 @@ h1 {
     font-size: 1.8rem;
     color: var(--background-box-green);
     text-align: center;
+}
+
+#keyboard {
+    margin-top: 100px;
 }
 
 .keyboard__list {
@@ -69,4 +73,44 @@ h1 {
 
 .keyboard__button:hover {
     background-color: var(--background-key-default-hover);
+}
+
+#grid {
+    margin: 20px auto;
+}
+
+.grid__row {
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+}
+
+.row__item {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    display: grid;
+    place-items: center;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    border: none;
+    box-shadow: 2px 2px 10px -1px rgba(0, 0, 0, 0.247) inset;
+    background-color: var(--background-box-white);
+    border-radius: 5px;
+}
+
+.green {
+    background-color: var(--background-box-green);
+}
+
+.yellow {
+    background-color: var(--background-box-yellow);
+}
+
+.gray {
+    background-color: var(--background-box-gray);
+}
+
+.key-gray {
+    background-color: var(--background-key-used-gray);
 }
